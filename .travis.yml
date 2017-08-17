@@ -13,6 +13,7 @@ addons:
       - python-simplejson
       - python-serial
       - python-yaml
+      - wkhtmltopdf
 
 virtualenv:
   system_site_packages: true
@@ -21,6 +22,7 @@ virtualenv:
 env:
   global:
   - VERSION="8.0" TESTS="0" LINT_CHECK="0" TRANSIFEX="0"
+  - WKHTMLTOPDF_VERSION="0.12.1"
 
   matrix:
   - LINT_CHECK="1" ODOO_LINT=1
